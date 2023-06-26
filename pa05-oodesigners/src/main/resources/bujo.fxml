@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene fx:id="scene" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="949.0" prefWidth="1405.0">
+      <children>
+         <HBox prefHeight="942.0" prefWidth="1398.0">
+            <children>
+               <VBox prefHeight="850.0" prefWidth="1156.0">
+                  <children>
+                     <HBox fx:id="menuBar" maxHeight="30.0" minHeight="-Infinity" prefHeight="55.0" prefWidth="301.0" style="-fx-background-color: #ebf6ff;">
+                        <children>
+                           <Button fx:id="newTaskButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="43.5" prefWidth="235.0" style="-fx-background-color: #84abf5;" text="+ Create New Task" textFill="WHITE">
+                              <font>
+                                 <Font name="Mali Regular" size="20.0" />
+                              </font>
+                              <opaqueInsets>
+                                 <Insets />
+                              </opaqueInsets>
+                              <HBox.margin>
+                                 <Insets left="5.0" right="10.0" top="5.0" />
+                              </HBox.margin></Button>
+                           <Button fx:id="newEventButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="43.5" prefWidth="235.0" style="-fx-background-color: #84abf5;" text="+ Create New Event" textFill="WHITE">
+                              <font>
+                                 <Font name="Mali Regular" size="20.0" />
+                              </font>
+                              <HBox.margin>
+                                 <Insets right="10.0" top="5.0" />
+                              </HBox.margin></Button>
+                           <Button fx:id="saveButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="43.5" prefWidth="130.0" style="-fx-background-color: #84abf5;" text="Save" textFill="WHITE">
+                              <font>
+                                 <Font name="Mali Regular" size="20.0" />
+                              </font>
+                              <HBox.margin>
+                                 <Insets right="10.0" top="5.0" />
+                              </HBox.margin></Button>
+                           <Button fx:id="openButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="43.5" prefWidth="130.0" style="-fx-background-color: #84abf5;" text="Open" textFill="WHITE">
+                              <font>
+                                 <Font name="Mali Regular" size="20.0" />
+                              </font>
+                              <HBox.margin>
+                                 <Insets right="10.0" top="5.0" />
+                              </HBox.margin></Button>
+                           <Button fx:id="newWeekButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="43.5" prefWidth="135.0" style="-fx-background-color: #84abf5;" text="New Week" textFill="WHITE">
+                              <font>
+                                 <Font name="Mali Regular" size="20.0" />
+                              </font>
+                              <HBox.margin>
+                                 <Insets top="5.0" />
+                              </HBox.margin></Button>
+                        </children>
+                        <opaqueInsets>
+                           <Insets />
+                        </opaqueInsets>
+                        <padding>
+                           <Insets left="5.0" top="5.0" />
+                        </padding>
+                     </HBox>
+                     <VBox alignment="TOP_CENTER" minWidth="-Infinity" prefHeight="913.0" prefWidth="1144.0" style="-fx-background-color: #ebf6ff;">
+                        <children>
+                           <HBox maxHeight="97.0" minHeight="59.0" prefHeight="82.0" prefWidth="1144.0">
+                              <children>
+                                 <Label alignment="CENTER" maxWidth="1150.0" minHeight="-Infinity" minWidth="544.0" prefHeight="60.0" prefWidth="915.0" text="                  My Bullet Journal" textFill="#1360cd">
+                                    <font>
+                                       <Font name="Mali Regular" size="35.0" />
+                                    </font>
+                                    <HBox.margin>
+                                       <Insets top="15.0" />
+                                    </HBox.margin>
+                                 </Label>
+                                 <ImageView fx:id="imageView" fitHeight="115.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                    <HBox.margin>
+                                       <Insets right="30.0" />
+                                    </HBox.margin>
+                                 </ImageView>
+                              </children>
+                           </HBox>
+                           <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+                              <children>
+                                 <Label prefHeight="30.0" prefWidth="135.0" text="Week Name:">
+                                    <font>
+                                       <Font name="Mali Regular" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <TextField fx:id="weekName" maxWidth="300.0" prefHeight="30.0">
+                                    <font>
+                                       <Font name="Mali Regular" size="15.0" />
+                                    </font>
+                                 </TextField>
+                              </children>
+                              <VBox.margin>
+                                 <Insets bottom="10.0" left="10.0" right="10.0" />
+                              </VBox.margin>
+                           </HBox>
+                           <HBox prefHeight="27.0" prefWidth="544.0">
+                              <children>
+                                 <Label prefHeight="41.0" prefWidth="235.0" text="Maximum # Tasks/Day:" textFill="#1360cd">
+                                    <HBox.margin>
+                                       <Insets left="21.0" />
+                                    </HBox.margin>
+                                    <font>
+                                       <Font name="Mali Regular" size="20.0" />
+                                    </font>
+                                    <opaqueInsets>
+                                       <Insets />
+                                    </opaqueInsets>
+                                 </Label>
+                                 <Label fx:id="maxTasksLabel" layoutX="10.0" layoutY="10.0" prefHeight="43.0" prefWidth="55.0">
+                                    <font>
+                                       <Font name="Mali Regular" size="20.0" />
+                                    </font>
+                                    <HBox.margin>
+                                       <Insets />
+                                    </HBox.margin>
+                                 </Label>
+                                 <Button fx:id="changeTasksMaxButton" mnemonicParsing="false" style="-fx-background-color:  #99defc;" text="Update">
+                                    <HBox.margin>
+                                       <Insets right="175.0" />
+                                    </HBox.margin>
+                                    <font>
+                                       <Font name="Mali Regular" size="15.0" />
+                                    </font>
+                                 </Button>
+                                 <Label prefHeight="44.0" prefWidth="270.0" text="Maximum # of Events/Day:" textFill="#1360cd">
+                                    <font>
+                                       <Font name="Mali Regular" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Label fx:id="maxEventsLabel" layoutX="400.0" layoutY="10.0" prefHeight="47.0" prefWidth="55.0">
+                                    <font>
+                                       <Font name="Mali Regular" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Button fx:id="changeEventsMaxButton" layoutX="295.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #99defc;" text="Update">
+                                    <font>
+                                       <Font name="Mali Regular" size="15.0" />
+                                    </font>
+                                 </Button>
+                              </children>
+                              <VBox.margin>
+                                 <Insets left="10.0" right="20.0" />
+                              </VBox.margin>
+                              <opaqueInsets>
+                                 <Insets />
+                              </opaqueInsets>
+                           </HBox>
+                           <GridPane fx:id="calendar" alignment="CENTER" gridLinesVisible="true" maxWidth="1080.0" minWidth="1080.0" prefHeight="598.0" prefWidth="1080.0" style="-fx-background-color: #FFFFFF;">
+                             <columnConstraints>
+                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="135.0" />
+                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="135.0" />
+                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="135.0" />
+                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="135.0" />
+                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="135.0" />
+                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="135.0" />
+                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="135.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="135.0" />
+                             </columnConstraints>
+                             <rowConstraints>
+                               <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                               <RowConstraints maxHeight="280.0" minHeight="255.3333740234375" prefHeight="264.0" vgrow="SOMETIMES" />
+                               <RowConstraints maxHeight="304.6666259765625" minHeight="280.0" prefHeight="296.0" vgrow="SOMETIMES" />
+                             </rowConstraints>
+                              <children>
+                                 <Label alignment="CENTER" prefHeight="54.0" prefWidth="156.0" text="Sunday" textFill="#5617bf" GridPane.columnIndex="1">
+                                    <font>
+                                       <Font name="Mali Regular" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Label alignment="CENTER" prefHeight="54.0" prefWidth="150.0" text="Monday" textFill="#5617bf" GridPane.columnIndex="2">
+                                    <font>
+                                       <Font name="Mali Regular" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Label alignment="CENTER" prefHeight="54.0" prefWidth="155.0" text="Tuesday" textFill="#5617bf" GridPane.columnIndex="3">
+                                    <font>
+                                       <Font name="Mali Regular" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Label alignment="CENTER" prefHeight="54.0" prefWidth="159.0" text="Wednesday" textFill="#5617bf" GridPane.columnIndex="4">
+                                    <font>
+                                       <Font name="Mali Regular" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Label alignment="CENTER" prefHeight="54.0" prefWidth="151.0" text="Thursday" textFill="#5617bf" GridPane.columnIndex="5">
+                                    <font>
+                                       <Font name="Mali Regular" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Label alignment="CENTER" prefHeight="54.0" prefWidth="154.0" text="Friday" textFill="#5617bf" GridPane.columnIndex="6">
+                                    <font>
+                                       <Font name="Mali Regular" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Label alignment="CENTER" prefHeight="54.0" prefWidth="165.0" text="Saturday" textFill="#5617bf" GridPane.columnIndex="7">
+                                    <font>
+                                       <Font name="Mali Regular" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Label alignment="CENTER" prefHeight="53.0" prefWidth="153.0" text="Tasks" textFill="#1360cd" GridPane.rowIndex="1">
+                                    <font>
+                                       <Font name="Mali Regular" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Label alignment="CENTER" prefHeight="53.0" prefWidth="157.0" text="Events" textFill="#1360cd" GridPane.rowIndex="2">
+                                    <font>
+                                       <Font name="Mali Regular" size="20.0" />
+                                    </font>
+                                 </Label>
+                              </children>
+                              <VBox.margin>
+                                 <Insets top="10.0" />
+                              </VBox.margin>
+                           </GridPane>
+                           <Label fx:id="taskExceptionPrinted" minHeight="12.0">
+                              <VBox.margin>
+                                 <Insets bottom="5.0" top="5.0" />
+                              </VBox.margin>
+                              <font>
+                                 <Font name="Mali Regular" size="12.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="eventExceptionPrinted" layoutX="572.0" layoutY="406.0" minHeight="12.0">
+                              <font>
+                                 <Font name="Mali Regular" size="12.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets bottom="5.0" top="5.0" />
+                              </VBox.margin>
+                           </Label>
+                           <Label fx:id="weekdayExceptionPrinted" maxHeight="-Infinity" minHeight="12.0">
+                              <font>
+                                 <Font name="Mali Regular" size="12.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets bottom="5.0" top="5.0" />
+                              </VBox.margin>
+                           </Label>
+                        </children>
+                     </VBox>
+                  </children>
+               </VBox>
+               <VBox prefHeight="204.0" prefWidth="267.0">
+                  <children>
+                     <VBox fx:id="quotesAndNotes" prefHeight="248.0" prefWidth="251.0" style="-fx-background-color: #FFFFFF;">
+                        <children>
+                           <Label prefHeight="39.0" prefWidth="251.0" text="Quotes &amp; Notes:" textFill="#1360cd">
+                              <font>
+                                 <Font name="Mali Regular" size="20.0" />
+                              </font>
+                           </Label>
+                           <Button fx:id="addQuoteNote" mnemonicParsing="false" prefHeight="31.0" prefWidth="260.0" style="-fx-background-color: #84abf5;" text="+ Add" textFill="WHITE">
+                              <font>
+                                 <Font name="Mali Regular" size="15.0" />
+                              </font></Button>
+                        </children>
+                     </VBox>
+                     <VBox fx:id="taskBar" prefHeight="721.0" prefWidth="246.0" style="-fx-background-color: #FFFFFF;">
+                        <children>
+                           <Label fx:id="taskBarLabel" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" prefWidth="267.0" text="Tasks for This Week:" textFill="#1360cd">
+                              <font>
+                                 <Font name="Mali Regular" size="20.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </VBox>
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+      </children></AnchorPane>
+</Scene>

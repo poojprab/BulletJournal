@@ -1,0 +1,11 @@
+.custom-checkbox .box {
+    -fx-background-color: #b8d2ff;
+}
+
+.custom-checkbox .box:hover {
+    -fx-background-color: #b8d2ff;
+}
+
+.custom-checkbox .box:selected {
+    -fx-background-color: #b8d2ff;
+}
