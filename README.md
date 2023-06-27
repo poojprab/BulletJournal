@@ -1,4 +1,5 @@
 # OODesigners:tm: Bullet Journal
+## Contributors: angelina-dong and adalialee
 Make bullet journaling easier with the OODesigners's new Bullet Journal! The new Bullet Journal comes with the ability to add new events or tasks, with limitations! In addition, you can open and save your new bujo journal in any file you want. You are also able to customize your layout with our new feature Quotes and Notes: the ability to add a new inspirational quote or little reminders. Overall, with our cute design and sleek interface, keeping track of your life has never been easier.
 
 #### How To Run OODesigner's Bullet Journal
